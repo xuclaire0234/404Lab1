@@ -1,22 +1,39 @@
 Question 1: What is your GitHub URL?
-https://github.com/xuclaire0234
+-- https://github.com/xuclaire0234
 
 Question 2: What version is the requests library installed on the system?
-Successfully installed certifi-2022.12.7 charset-normalizer-2.1.1 idna-3.4 requests-2.28.1 urllib3-1.26.13
+-- requests-2.28.1
 
 Question 3: What version is the requests library installed in the virtualenv?
-Successfully installed distlib-0.3.6 filelock-3.9.0 platformdirs-2.6.2 virtualenv-20.17.1
+-- requests-2.28.1
 
 Question 4: What is the difference between the virtual environment and the not virtual environment python?
-(env) jingyixu@JingyideMacBook-Pro lab
+-- "(env) jingyixu@JingyideMacBook-Pro lab", there is a prefix to indicate the virtual environment status.
 
 Question 5: What status code is returned for http://google.com ? What URL must you visit to get a 200 status code?
-HTTP/1.1 301 Moved Permanently,  curl -iL https://www.google.com/ 
+-- HTTP/1.1 301 Moved Permanently
+-- https://www.google.com/ for getting a 200 status code
 
 Question 6: What status code is returned for http://google.com/teapot? Is it the one returned by curl -i or curl -iL? What happens when you curl http://www.google.com/teapot?
-301 Moved, -i HTTP/1.1 301 Moved Permanently, -iL HTTP/1.1 418 I'm a Teapot (HTTP/2 418 )
+
+-- HTTP/1.1 301 Moved Permanently 
+-- "-i HTTP/1.1 301 Moved Permanently"; "-iL HTTP/1.1 418 I'm a Teapot (HTTP/2 418 )" "-i" is the one reterned code 301
+-- curl http://www.google.com/teapot -> return code is HTTP/2 418
 
 Question 7: What changed in the output of https://webdocs.cs.ualberta.ca/~hindle1/1.py when you used -X POST? What is this method useful for?
-In H3, some content are formed if i use -X POST. This method is used for posting data (add new data)
+-- without -X POST 
+<H3>Form Contents:</H3>
+<P>No form fields.
+<DL>
+</DL>
+
+-- with -X POST
+<H3>Form Contents:</H3>
+<DL>
+<DT>X: <i>&lt;type 'instance'&gt;</i>
+<DD>MiniFieldStorage('X', 'Y')
+</DL>
+-- In H3, some content are formed if i use -X POST. This method is used for posting data (add new data)
 
 Question 8: What is the raw URL to your Python script on GitHub?
+-- https://raw.githubusercontent.com/xuclaire0234/404Lab1/main/find.py
